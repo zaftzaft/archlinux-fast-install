@@ -351,6 +351,11 @@ $ yaourt -S otf-ipafont
 $ yaourt -S ttf-ricty
 ```
 
+### emoji
+```
+$ pacman -S ttf-symbola
+```
+
 
 ## laptop
 

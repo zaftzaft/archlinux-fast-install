@@ -529,3 +529,14 @@ Section "InputClass"
   #Option "ignore" "on"
 EndSection
 ```
+
+
+
+## cf-sx3 .asoundrc
+```
+pcm.!default {
+  type hw
+  card 1
+}
+
+```

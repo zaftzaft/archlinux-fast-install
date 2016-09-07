@@ -149,6 +149,10 @@ Name=<nic>
 
 [Network]
 DHCP=ipv4
+
+
+Address=
+Gateway=
 ```
 
 ```
@@ -197,6 +201,12 @@ $ systemctl start sshd
 ```
 
 
+## systemd-timesyncd
+```
+timedatectl set-timezone Asia/Tokyo
+timedatectl set-ntp true
+```
+
 ## timezone
 ```
 $ sudo ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
@@ -237,9 +247,9 @@ $ sudoedit /etc/pacman.conf
 ```
 
 ```
-  [archlinuxfr]
-  SigLevel = Never
-  Server = http://repo.archlinux.fr/$arch
+[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/$arch
 ```
 
 ```
@@ -285,7 +295,10 @@ $ pacman -S mate-applets eom
 
 ```
 $ vim ~/.xinitrc
-  exec mate-session
+```
+
+```
+exec mate-session
 ```
 
 ### disable desktop icons
@@ -315,7 +328,7 @@ Server = http://downloads.sourceforge.net/project/pnsft-aur/pur/$arch
 ```
 
 ```
-pacman -S uim-mozc
+pacman -Sy uim-mozc
 uim-module-manager --register mozc
 ```
 
@@ -374,6 +387,13 @@ $ pacman -S lm_sensors
 ## Chrome
 ```
 $ yaourt -S google-chrome
+```
+
+
+
+## mikutter
+```
+yaourt -S mikutter
 ```
 
 
@@ -437,7 +457,7 @@ $ sudoedit /etc/systemd/system.conf
 ```
 
 ```
-  DefaultTimeoutStopSec=3s
+DefaultTimeoutStopSec=3s
 ```
 
 
@@ -539,4 +559,11 @@ pcm.!default {
   card 1
 }
 
+```
+
+
+# Broadcom BCM57788
+```
+modprobe -r tg3
+modprobe tg3
 ```

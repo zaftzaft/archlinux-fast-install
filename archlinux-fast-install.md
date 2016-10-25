@@ -193,6 +193,9 @@ $ sudo resolvconf -u
 ```
 $ ping 8.8.8.8
 ```
+```
+$ ping google.com
+```
 
 
 # Software
@@ -211,38 +214,15 @@ PermitRootLogin no
 ```
 
 ```
-$ systemctl enable sshd
-$ systemctl start sshd
+$ sudo systemctl enable sshd
+$ sudo systemctl start sshd
 ```
 
 
 ## systemd-timesyncd
 ```
-timedatectl set-timezone Asia/Tokyo
-timedatectl set-ntp true
-```
-
-## timezone
-```
-$ sudo ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
-```
-
-## ntp
-```
-$ pacman -S openntpd
-$ sudoedit /etc/ntpd.conf
-```
-
-
-```
-  server 0.jp.pool.ntp.org
-  server 1.jp.pool.ntp.org
-  server 2.jp.pool.ntp.org
-  server 3.jp.pool.ntp.org
-```
-
-```
-$ systemctl enable openntpd
+$ sudo timedatectl set-timezone Asia/Tokyo
+$ sudo timedatectl set-ntp true
 ```
 
 ### ハードウェアクロック(ntp後)

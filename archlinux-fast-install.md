@@ -282,10 +282,10 @@ yaourt -S metasploit
 ## mate
 
 ```
-$ pacman -S xorg-server xorg-xinit
-$ pacman -S mate
-$ pacman -S terminator
-$ pacman -S mate-applets eom
+$ sudo pacman -S xorg-server xorg-xinit
+$ sudo pacman -S mate
+$ sudo pacman -S terminator
+$ sudo pacman -S mate-applets eom
 ```
 
 ```
@@ -294,6 +294,11 @@ $ vim ~/.xinitrc
 
 ```
 exec mate-session
+```
+
+### startx
+```
+$ startx
 ```
 
 ### disable desktop icons
@@ -344,7 +349,7 @@ export XMODIFIERS='@im=uim'
 pacman -S xorg-xev
 
 
-## theme
+## Theme
 
 ```
 $ yaourt -S vertex-themes
@@ -352,7 +357,7 @@ $ yaourt -S menda-maia-icon-theme
 ```
 
 
-## font
+## Font
 
 ```
 $ yaourt -S otf-ipafont
@@ -421,7 +426,6 @@ $ newgrp wireshark
 $ sudo pacman -S uucp
 $ sudo gpasswd -a <username> uucp
 ```
-
 
 ### 接続
 ```

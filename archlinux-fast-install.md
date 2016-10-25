@@ -68,6 +68,7 @@ $ pacstrap /mnt vim
 $ genfstab -U /mnt > /mnt/etc/fstab
 ```
 + noatime を追加
+  - ただのメモ
 
 ## chroot
 ```
@@ -102,6 +103,8 @@ $ echo KEYMAP=jp106 > /etc/vconsole.conf
 $ echo host > /etc/hostname
 ```
 
+- host は自分の好きな文字
+
 ## root password
 ```
 $ passwd
@@ -130,6 +133,8 @@ $ visudo
  <username> ALL=(ALL) ALL
 ```
 
+- 下の方にある root ALL=(ALL) ALL をコピーして編集する
+
 ## reboot
 ```
 $ exit
@@ -140,6 +145,7 @@ $ shutdown -r now
 
 # Network
 ```
+$ export EDITOR=vim
 $ sudoedit /etc/systemd/network/net.network
 ```
 
@@ -147,19 +153,24 @@ $ sudoedit /etc/systemd/network/net.network
 [Match]
 Name=<nic>
 
+# <nic> は enp0s33 などに置き換える
+# :r! ip link で vim に コマンドの出力結果の貼付け
+
 [Network]
 DHCP=ipv4
 
 
-Address=
-Gateway=
+# 以下はメモ
+#Address=
+#Gateway=
 ```
 
 ```
-$ systemctl enable systemd-networkd
-$ systemctl restart systemd-networkd
+$ sudo systemctl enable systemd-networkd
+$ sudo systemctl restart systemd-networkd
 ```
 
+- メモ systemd-networkd のマニュアル
 ```
 $ man systemd.network
 ```
@@ -175,9 +186,13 @@ name_servers=8.8.8.8
 ```
 
 ```
-$ sudo resolveconf -u
+$ sudo resolvconf -u
 ```
 
+## Ping
+```
+$ ping 8.8.8.8
+```
 
 
 # Software

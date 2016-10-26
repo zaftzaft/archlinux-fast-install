@@ -142,6 +142,8 @@ $ umount -R /mnt
 $ shutdown -r now
 ```
 
+------------------------
+# インストール後の設定
 
 # Network
 ```
@@ -195,6 +197,11 @@ $ ping 8.8.8.8
 ```
 ```
 $ ping google.com
+```
+
+## Wi-Fi
+```
+$ sudo pacman -S wpa_supplicant
 ```
 
 

@@ -385,6 +385,12 @@ $ pacman -S acpi
 $ pacman -S lm_sensors
 ```
 
+## Audio
+```
+$ pacman  -S alsa-utils
+```
+
+
 ### x220 synaptics
 ```
 /etc/X11/xorg.conf.d

@@ -291,9 +291,10 @@ yaourt -S metasploit
 ```
 $ sudo pacman -S xorg-server xorg-xinit
 $ sudo pacman -S mate
-$ sudo pacman -S terminator
 $ sudo pacman -S mate-applets eom
+$ sudo pacman -S terminator
 ```
+
 
 ```
 $ vim ~/.xinitrc
@@ -315,6 +316,13 @@ dconf write /org/mate/caja/desktop/computer-icon-visible false
 dconf write /org/mate/caja/desktop/home-icon-visible false
 dconf write /org/mate/caja/desktop/trash-icon-visible false
 ```
+
+## mate-terminal
+```
+$ pacman -S mate-terminal
+```
+- https://github.com/cledoux/mate-terminal-colors-solarized
+
 
 ## urxvt
 ```

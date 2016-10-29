@@ -471,6 +471,12 @@ $ cu -l /dev/ttyUSB0
 ```
 
 
+## リモートデスクトップ
+```
+$ sudo pacman -S remmina freerdp
+```
+
+
 
 
 # Truble Shoot

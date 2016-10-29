@@ -425,6 +425,18 @@ $ sudo pacman -S linux-headers
 $ yaourt -S vmware-systemd-services
 ```
 
+## virtualbox
+```
+$ sudo pacman -S linux-headers
+$ sudo pacman -S virtualbox
+```
+
+### virtuablbox USB
+- usb extension pack のインストール
+```
+gpasswd -a <user> vboxusers
+```
+
 
 ### VMWare console
 ```

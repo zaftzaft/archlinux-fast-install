@@ -232,6 +232,15 @@ $ sudo timedatectl set-timezone Asia/Tokyo
 $ sudo timedatectl set-ntp true
 ```
 
+-
+```
+/etc/systemd/timesyncd.conf
+
+NTP=ntp.nict.jp
+
+restart systemd-timesyncd
+```
+
 ### ハードウェアクロック(ntp後)
 
 ```
@@ -408,6 +417,13 @@ $ pacman  -S alsa-utils
 ## Chrome
 ```
 $ yaourt -S google-chrome
+```
+
+## Android
+```
+$ sudo pacman -S android-tools
+$ sudo pacman -S android-udev
+
 ```
 
 

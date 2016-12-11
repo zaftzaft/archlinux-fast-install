@@ -300,7 +300,7 @@ yaourt -S metasploit
 ```
 $ sudo pacman -S xorg-server xorg-xinit
 $ sudo pacman -S mate
-$ sudo pacman -S mate-applets eom
+$ sudo pacman -S mate-applets eom mozo
 $ sudo pacman -S terminator
 ```
 

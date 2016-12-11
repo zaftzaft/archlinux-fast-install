@@ -411,6 +411,7 @@ $ pacman  -S alsa-utils
 ### x220 synaptics
 ```
 /etc/X11/xorg.conf.d
+/usr/share/X11/xorg.conf.d/70-synaptics.conf (2016/12/08)
 ```
 
 

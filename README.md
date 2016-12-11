@@ -326,6 +326,19 @@ dconf write /org/mate/caja/desktop/home-icon-visible false
 dconf write /org/mate/caja/desktop/trash-icon-visible false
 ```
 
+
+### メニューバーアイコンの変更
+```
+$ gsettings get org.mate.panel.menubar icon-name
+'start-here'
+
+$ gsettings set org.mate.panel.menubar icon-name archlinux
+
+
+```
+
+
+
 ## mate-terminal
 ```
 $ pacman -S mate-terminal

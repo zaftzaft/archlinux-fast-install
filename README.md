@@ -506,6 +506,42 @@ $ cu -l /dev/ttyUSB0
 $ sudo pacman -S remmina freerdp
 ```
 
+## Media
+```
+asunder
+vlc
+gimp
+inkscape
+```
+
+## fs
+```
+sudo pacman -S  dosfstools ntfs-3g samba
+```
+
+## network
+```
+sudo pacman -S whois traceroute iperf iftop bmon
+sudo pacman -S scapy openbsd-netcat
+sudo pacman -S wireless_tools aircrack-ng rfkill
+sudo pacman -S net-tools bind-tools
+```
+
+
+nethogs
+mtr
+iptraf-ng
+bwm-ng
+
+
+
+## util
+xsel
+scrot
+jq
+
+
+
 
 
 

@@ -7,3 +7,9 @@ pacman -S wine
 ## xrdp
 ### だめ 20161107
 yaourt -S xrdp-git
+
+
+## SMART
+pacman -S smartctl
+
+smartctl -a /dev/sda

@@ -201,7 +201,7 @@ $ ping google.com
 
 ## Wi-Fi
 ```
-$ sudo pacman -S wpa_supplicant
+$ sudo pacman -S wpa_supplicant iw
 ```
 
 

@@ -399,6 +399,7 @@ $ yaourt -S menda-maia-icon-theme
 ```
 $ yaourt -S otf-ipafont
 $ yaourt -S ttf-ricty
+$ pacman -S adobe-source-code-pro-fonts
 ```
 
 ### emoji
@@ -421,11 +422,6 @@ $ pacman  -S alsa-utils
 ```
 
 
-### x220 synaptics
-```
-/etc/X11/xorg.conf.d
-/usr/share/X11/xorg.conf.d/70-synaptics.conf (2016/12/08)
-```
 
 
 ## Chrome
@@ -637,6 +633,12 @@ set-option -g message-fg brightblue
 
 
 ## synaptics
+### x220 synaptics
+```
+/etc/X11/xorg.conf.d
+/usr/share/X11/xorg.conf.d/70-synaptics.conf (2016/12/08)
+```
+
 ```
 # X220
 Section "InputClass"

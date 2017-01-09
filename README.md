@@ -525,20 +525,16 @@ sudo pacman -S whois traceroute iperf iftop bmon
 sudo pacman -S scapy openbsd-netcat
 sudo pacman -S wireless_tools aircrack-ng rfkill
 sudo pacman -S net-tools bind-tools
+
+sudo pacman -S nethogs mtr iptraf-ng bwm-ng
 ```
 
 
-nethogs
-mtr
-iptraf-ng
-bwm-ng
 
 
 
 ## util
-xsel
-scrot
-jq
+sudo pacman -S xsel scrot jq
 
 
 

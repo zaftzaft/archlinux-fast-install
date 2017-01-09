@@ -13,3 +13,7 @@ yaourt -S xrdp-git
 pacman -S smartctl
 
 smartctl -a /dev/sda
+
+
+## maim
+pacman -S maim slop

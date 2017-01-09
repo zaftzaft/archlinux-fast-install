@@ -21,6 +21,13 @@ $ pacman -S --needed $(< pkg.list )
 
 ```
 
+## yaourt
+/etc/yaourtrc
+```
+# Build
+EXPORT=2
+```
+
 ## 個人メモ
 
 

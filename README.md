@@ -519,6 +519,7 @@ inkscape
 ## fs
 ```
 sudo pacman -S  dosfstools ntfs-3g samba
+exfat-utils
 ```
 
 ## network

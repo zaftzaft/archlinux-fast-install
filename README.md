@@ -268,6 +268,12 @@ $ sudo pacman -Sy yaourt
 $ sudo pamcan -S downgrade
 ```
 
+sudoedit /etc/yaourtrc
+```
+# Build
+EXPORT=2
+```
+
 ## pkgfile
 
 ```
@@ -397,7 +403,7 @@ $ yaourt -S menda-maia-icon-theme
 ## Font
 
 ```
-$ yaourt -S otf-ipafont
+$ pacman -S otf-ipafont
 $ yaourt -S ttf-ricty
 $ pacman -S adobe-source-code-pro-fonts
 ```

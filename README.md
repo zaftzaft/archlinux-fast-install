@@ -530,6 +530,8 @@ sudo pacman -S wireless_tools aircrack-ng rfkill
 sudo pacman -S net-tools bind-tools
 
 sudo pacman -S nethogs mtr iptraf-ng bwm-ng
+
+sudo pacman -S net-snmp
 ```
 
 

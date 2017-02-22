@@ -17,3 +17,12 @@ smartctl -a /dev/sda
 
 ## maim
 pacman -S maim slop
+
+
+
+
+## GNS3
+yaourt -S gns3-server
+yaourt -S gns3-gui
+yaourt -S dynamips
+

@@ -524,7 +524,7 @@ exfat-utils
 
 ## network
 ```
-sudo pacman -S whois traceroute iperf iftop bmon
+sudo pacman -S whois traceroute iperf iperf3 iftop bmon
 sudo pacman -S scapy openbsd-netcat
 sudo pacman -S wireless_tools aircrack-ng rfkill
 sudo pacman -S net-tools bind-tools

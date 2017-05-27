@@ -26,3 +26,12 @@ yaourt -S gns3-server
 yaourt -S gns3-gui
 yaourt -S dynamips
 
+
+## TFTP
+pacman -S tftp-hpa
+
+/srv/tftp
+にファイルを入れる
+
+systemctl start tftpd
+

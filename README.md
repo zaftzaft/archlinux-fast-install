@@ -540,6 +540,7 @@ sudo pacman -S net-snmp
 
 ## util
 sudo pacman -S xsel scrot jq
+yaourt -S nkf
 
 
 

@@ -35,3 +35,13 @@ pacman -S tftp-hpa
 
 systemctl start tftpd
 
+
+
+## urxvt
+yaourt -S urxvt-fullscreen
+
+.Xresources
+```
+URxvt.perl-ext-common: fullscreen
+URxvt.keysym.F11: perl:fullscreen:switch
+```

@@ -514,11 +514,12 @@ asunder
 vlc
 gimp
 inkscape
+rawtherapee
 ```
 
 ## fs
 ```
-sudo pacman -S dosfstools ntfs-3g samba exfat-utils
+sudo pacman -S dosfstools ntfs-3g samba exfat-utils rsync
 ```
 
 ## network

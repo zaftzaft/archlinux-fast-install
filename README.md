@@ -60,7 +60,7 @@ $ vim /etc/pacman.d/mirrorlist
 ## パッケージのインストール
 ```
 $ pacstrap /mnt base base-devel
-$ pacstrap /mnt vim
+$ pacstrap /mnt vim openssh
 ```
 
 ## fstab の設定
@@ -534,13 +534,14 @@ sudo pacman -S nethogs mtr iptraf-ng bwm-ng
 sudo pacman -S net-snmp
 ```
 
-
-
-
-
 ## util
-sudo pacman -S xsel scrot jq
+```
+pacman -S jq
 yaourt -S nkf
+pacman -S arch-install-scripts
+pacman -S maim slop
+pacman -S xsel scrot
+```
 
 
 

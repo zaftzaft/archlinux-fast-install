@@ -527,11 +527,8 @@ sudo pacman -S dosfstools ntfs-3g samba exfat-utils rsync
 sudo pacman -S whois traceroute iperf iperf3 iftop bmon
 sudo pacman -S scapy3k openbsd-netcat
 sudo pacman -S wireless_tools aircrack-ng rfkill
-sudo pacman -S net-tools bind-tools
-
-sudo pacman -S nethogs mtr iptraf-ng bwm-ng
-
-sudo pacman -S net-snmp
+sudo pacman -S net-tools bind-tools ethtool net-snmp
+sudo pacman -S mtr nethogs iptraf-ng bwm-ng
 ```
 
 ## util

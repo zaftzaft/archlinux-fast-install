@@ -291,6 +291,8 @@ sudo pacman -S wget
 sudo pacman -S tcpdump hping nmap
 sudo pacman -S htop bmon
 sudo pacman -S nodejs npm unzip
+sudo pacman -S python-pip
+
 sudo pacman -S gdb
 yaourt -S metasploit
 ```

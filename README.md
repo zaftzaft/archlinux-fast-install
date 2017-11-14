@@ -551,6 +551,32 @@ pacman -S xsel scrot
 
 # Truble Shoot
 
+
+## Wi-Fi
+```
+$ wpa_passphrase <ssid> <password> > .config
+```
+
+### connect script
+```
+ip link set dev wlp3s0 up
+pkill wpa_supplicant
+wpa_supplicant -i wlp3s0 -c $1 -B
+dhcpcd wlp3s0
+```
+
+### hide SSID(config)
+```
+network={
+  ssid="hogehoge"
+  psk=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+  scan_ssid=1
+}
+```
+
+
+
 ## Downgrade
 + yaourt の設定してから
 ```

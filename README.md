@@ -519,6 +519,12 @@ inkscape
 rawtherapee
 ```
 
+#### asunder http proxy
+```
+server: freedbtest.dyndns.org
+port: 80
+```
+
 ## fs
 ```
 sudo pacman -S dosfstools ntfs-3g samba exfat-utils rsync

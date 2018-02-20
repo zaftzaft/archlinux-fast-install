@@ -538,6 +538,7 @@ sudo pacman -S scapy3k openbsd-netcat
 sudo pacman -S wireless_tools aircrack-ng rfkill
 sudo pacman -S net-tools bind-tools ethtool net-snmp
 sudo pacman -S mtr nethogs iptraf-ng bwm-ng
+sudo pacman -S wol
 ```
 
 ## util

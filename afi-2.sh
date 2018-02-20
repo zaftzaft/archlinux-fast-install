@@ -4,6 +4,9 @@
 systemctl start systemd-networkd
 systemctl enable systemd-networkd
 
+echo name_servers=8.8.8.8 >> /etc/resolvconf.conf
+resolvconf -u
+
 systemctl start sshd
 systemctl enable sshd
 
@@ -31,12 +34,16 @@ pacman -Syyu --noconfirm \
   whois traceroute iperf iperf3 iftop bmon \
   scapy3k openbsd-netcat \
   net-tools bind-tools ethtool net-snmp \
-  mtr nethogs iptraf-ng bwm-ng
-
-#pacman -S wpa_supplicant wireless_tools aircrack-ng rfkill
-
+  mtr nethogs iptraf-ng bwm-ng \
+  uucp wireshark-cli \
+  jq arch-install-scripts \
+  wpa_supplicant iw wireless_tools aircrack-ng rfkill \
+  xf86-input-synaptics acpi lm_sensors
 
 
 
 echo EXPORT=2 >> /etc/yaourtrc
 pkgfile --update
+
+#yaourt -S --noconfirm nkf
+

@@ -552,6 +552,10 @@ pacman -S xsel scrot
 ```
 
 
+## Awesome network tool
+```
+git clone https://github.com/upa/deadman.git
+```
 
 
 

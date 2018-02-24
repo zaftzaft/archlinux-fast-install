@@ -513,7 +513,7 @@ $ sudo pacman -S remmina freerdp
 ## Media
 ```
 asunder
-vlc
+vlc qt4
 gimp
 inkscape
 rawtherapee

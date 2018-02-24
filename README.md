@@ -558,6 +558,11 @@ git clone https://github.com/upa/deadman.git
 ```
 
 
+## Office
+```
+pacman -S thunderbird
+pacman -S libreoffice-still
+```
 
 
 # Truble Shoot

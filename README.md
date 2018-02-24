@@ -562,6 +562,7 @@ git clone https://github.com/upa/deadman.git
 ```
 pacman -S thunderbird
 pacman -S libreoffice-still
+pacman -S slack-desktop
 ```
 
 

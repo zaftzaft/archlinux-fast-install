@@ -399,6 +399,8 @@ pacman -S xorg-xev
 ```
 $ yaourt -S vertex-themes
 $ yaourt -S menda-maia-icon-theme
+
+yaourt -S materia-theme
 ```
 
 

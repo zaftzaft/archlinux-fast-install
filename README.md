@@ -551,6 +551,8 @@ pacman -S arch-install-scripts
 pacman -S maim slop
 alias scr='maim -s ~/Desktop/$(date +%s).png'
 pacman -S xsel scrot
+
+pacman -S lshw
 ```
 
 

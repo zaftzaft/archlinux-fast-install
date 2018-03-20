@@ -515,6 +515,7 @@ $ sudo pacman -S remmina freerdp
 ## Media
 ```
 asunder
+brasero
 vlc qt4
 gimp
 inkscape

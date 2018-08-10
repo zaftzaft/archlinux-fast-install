@@ -251,8 +251,8 @@ $ hwclock -w --localtime
 
 
 
-## yaourt
-
+### yaourt
+https://github.com/archlinuxfr/yaourt/issues/376
 ```
 $ sudoedit /etc/pacman.conf
 ```
@@ -273,6 +273,12 @@ sudoedit /etc/yaourtrc
 # Build
 EXPORT=2
 ```
+
+## aura
+https://github.com/aurapm/aura
+yaourt -S => aura -A
+
+
 
 ## pkgfile
 
@@ -308,16 +314,13 @@ yaourt -S metasploit
 ```
 $ sudo pacman -S xorg-server xorg-xinit
 $ sudo pacman -S mate
-$ sudo pacman -S mate-applets eom mozo
-$ sudo pacman -S terminator
+$ sudo pacman -S mate-applets eom mozo mate-terminal
 ```
 
 
 ```
 $ vim ~/.xinitrc
-```
 
-```
 exec mate-session
 ```
 
@@ -373,8 +376,10 @@ Server = http://downloads.sourceforge.net/project/pnsft-aur/pur/$arch
 ```
 
 ```
-pacman -Sy uim-mozc
-uim-module-manager --register mozc
+#pacman -Sy uim-mozc
+#uim-module-manager --register mozc
+
+yaourt -S uim-mozc
 ```
 
 
@@ -414,7 +419,8 @@ $ pacman -S adobe-source-code-pro-fonts
 
 ### emoji
 ```
-$ pacman -S ttf-symbola
+#$ pacman -S ttf-symbola
+$ pacman -S noto-fonts-emoji
 ```
 
 

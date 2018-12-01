@@ -250,7 +250,7 @@ $ hwclock -w --localtime
 
 
 
-
+# => yay
 ### yaourt
 https://github.com/archlinuxfr/yaourt/issues/376
 ```
@@ -576,6 +576,13 @@ git clone https://github.com/upa/deadman.git
 pacman -S thunderbird
 pacman -S libreoffice-still
 pacman -S slack-desktop
+```
+
+
+## matplotlib
+```
+pacman -S python-matplotlib python-pandas
+pacman -S tk
 ```
 
 

@@ -543,7 +543,8 @@ sudo pacman -S squashfs-tools
 ## network
 ```
 sudo pacman -S whois traceroute iperf iperf3 iftop bmon
-sudo pacman -S scapy3k openbsd-netcat
+# kamene (old scapy3k)
+sudo pacman -S kamene openbsd-netcat
 sudo pacman -S wireless_tools aircrack-ng rfkill
 sudo pacman -S net-tools bind-tools ethtool net-snmp
 sudo pacman -S mtr nethogs iptraf-ng bwm-ng

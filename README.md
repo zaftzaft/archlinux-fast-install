@@ -250,33 +250,16 @@ $ hwclock -w --localtime
 
 
 
-# => yay
-### yaourt
-https://github.com/archlinuxfr/yaourt/issues/376
-```
-$ sudoedit /etc/pacman.conf
-```
+# yaourt => yay
+wget https://github.com/Jguer/yay/releases/download/v9.0.1/yay_9.0.1_x86_64.tar.gz
+tar xf
+cp yay /usr/bin
 
-```
-[archlinuxfr]
-SigLevel = Never
-Server = http://repo.archlinux.fr/$arch
-```
+find .cache/yay/ | grep pkg
 
-```
-$ sudo pacman -Sy yaourt
-$ sudo pamcan -S downgrade
-```
 
-sudoedit /etc/yaourtrc
-```
-# Build
-EXPORT=2
-```
+# downgrade
 
-## aura
-https://github.com/aurapm/aura
-yaourt -S => aura -A
 
 
 
@@ -291,10 +274,8 @@ $ sudo pkgfile --update
 # 必要に応じて
 
 ```
-sudo pacman -S tmux git
+sudo pacman -S wget tmux git
 sudo pacman -S xsel
-sudo pacman -S wget
-sudo pacman -S tcpdump hping nmap
 sudo pacman -S htop bmon
 sudo pacman -S nodejs npm unzip
 sudo pacman -S python-pip
@@ -411,10 +392,15 @@ pacman -S xorg-xev
 ## Theme
 
 ```
-$ yaourt -S vertex-themes
-$ yaourt -S menda-maia-icon-theme
+$ yay -S menda-maia-icon-theme
 
 yaourt -S materia-theme
+
+pacman -S materia-gtk-theme ?
+
+
+
+$ yay -S vertex-themes
 ```
 
 
@@ -422,7 +408,7 @@ yaourt -S materia-theme
 
 ```
 $ pacman -S otf-ipafont
-$ yaourt -S ttf-ricty
+$ yay -S ttf-ricty
 $ pacman -S adobe-source-code-pro-fonts
 ```
 
@@ -436,22 +422,22 @@ $ pacman -S noto-fonts-emoji
 ## laptop
 
 ```
-$ pacman -S xf86-input-synaptics
-$ pacman -S acpi
-$ pacman -S lm_sensors
+$ pacman -S xf86-input-synaptics acpi lm_sensors
 ```
 
 ## Audio
 ```
 $ pacman  -S alsa-utils
+
+
+alsactl store
+
+systemctl status alsa-restore
 ```
-
-
-
 
 ## Chrome
 ```
-$ yaourt -S google-chrome
+$ yay -S google-chrome
 ```
 
 ## Android
@@ -551,6 +537,7 @@ sudo pacman -S squashfs-tools
 
 ## network
 ```
+sudo pacman -S tcpdump hping nmap
 sudo pacman -S whois traceroute iperf iperf3 iftop bmon
 # kamene (old scapy3k)
 sudo pacman -S kamene openbsd-netcat
@@ -565,13 +552,13 @@ sudo pacman -S openvpn
 ## util
 ```
 pacman -S jq
-yaourt -S nkf
 pacman -S arch-install-scripts
 pacman -S maim slop
 alias scr='maim -s ~/Desktop/$(date +%s).png'
 pacman -S xsel scrot
-
 pacman -S lshw
+
+yay -S nkf
 ```
 
 

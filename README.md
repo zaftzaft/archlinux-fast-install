@@ -305,6 +305,15 @@ yaourt -S metasploit
 
 
 
+## systemd-nspawn
+mkdir /etc/systemd/system/systemd-nspawn@.service.d
+/etc/systemd/system/systemd-nspawn@.service.d/override.conf
+[Service]
+ExecStart=
+ExecStart=/usr/bin/systemd-nspawn --quiet --keep-unit --boot --link-journal=try-guest --machine=%i
+
+
+
 
 
 # Desktop ENV

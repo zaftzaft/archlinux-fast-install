@@ -741,3 +741,40 @@ pcm.!default {
 modprobe -r tg3
 modprobe tg3
 ```
+
+
+
+
+
+
+# install UEFI
+```
+gdisk /dev/sda
+:o
+:n
+:
+:+200M
+:EF00
+
+:n
+:
+:
+:
+:w
+```
+
+```
+mkfs.fat -F32 /dev/sda1
+mkfs.ext4 /dev/sda2
+```
+
+
+```
+pacman -S grub dosfstools efibootmgr
+
+
+
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub --recheck
+
+grub-mkconfig -o /boot/grub/grub.cfg
+```

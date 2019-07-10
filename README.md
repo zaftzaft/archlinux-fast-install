@@ -778,3 +778,18 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub --re
 
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+
+# samba
+```
+wget "https://git.samba.org/samba.git/?p=samba.git;a=blob_plain;f=examples/smb.conf.default;hb=HEAD" -O /etc/samba/smb.conf
+
+pdbedit -a -u <samba_user>
+
+systemctl start smb
+systemctl enable smb
+```
+
+```
+log file = /var/log/samba/%m.log
+```

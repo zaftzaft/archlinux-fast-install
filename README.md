@@ -551,6 +551,7 @@ sudo pacman -S openvpn
 
 ## util
 ```
+pacman -S lsof
 pacman -S jq
 pacman -S arch-install-scripts
 pacman -S maim slop

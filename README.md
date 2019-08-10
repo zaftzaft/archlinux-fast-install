@@ -549,6 +549,14 @@ sudo pacman -S bridge-utils
 sudo pacman -S openvpn
 ```
 
+## Wake On LAN
+```
+yay -S wol-systemd
+
+systemctl start wol@eth0
+systemctl enable wol@eth0
+```
+
 ## util
 ```
 pacman -S lsof

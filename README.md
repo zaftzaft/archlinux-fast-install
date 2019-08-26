@@ -350,6 +350,8 @@ $ pacman -S mate-terminal
 ## urxvt
 ```
 $ pacman -S rxvt-unicode
+
+yay -S urxvt-resize-font-git
 ```
 
 
@@ -392,15 +394,8 @@ pacman -S xorg-xev
 ## Theme
 
 ```
-$ yay -S menda-maia-icon-theme
-
-yaourt -S materia-theme
-
-pacman -S materia-gtk-theme ?
-
-
-
-$ yay -S vertex-themes
+pacman -S materia-gtk-theme
+yay -S maia-icon-theme
 ```
 
 
@@ -574,6 +569,14 @@ yay -S nkf
 ## Awesome network tool
 ```
 git clone https://github.com/upa/deadman.git
+```
+
+## Prometheus
+```
+sudo pacman -S prometheus-node-exporter
+
+systemctl start prometheus-node-exporter
+systemctl enable prometheus-node-exporter
 ```
 
 

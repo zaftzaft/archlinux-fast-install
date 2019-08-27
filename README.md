@@ -419,6 +419,9 @@ $ pacman -S noto-fonts-emoji
 ```
 $ pacman -S xf86-input-synaptics acpi lm_sensors
 ```
+```
+sudo sensors-detect
+```
 
 ## Audio
 ```

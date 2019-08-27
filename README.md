@@ -481,7 +481,9 @@ $ yaourt ncurses5-compat-libs
 
 ## Wireshark
 ```
-$ sudo pacman -S wireshark-gtk
+$ sudo pacman -S wireshark-qt
+or
+$ yay -S wireshark-gtk
 ```
 
 ```

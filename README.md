@@ -277,6 +277,7 @@ $ sudo pkgfile --update
 sudo pacman -S wget tmux git
 sudo pacman -S xsel
 sudo pacman -S htop bmon
+sudo pacman -S go
 sudo pacman -S nodejs npm unzip
 sudo pacman -S python-pip
 
@@ -547,6 +548,12 @@ sudo pacman -S mtr nethogs iptraf-ng bwm-ng
 sudo pacman -S wol
 sudo pacman -S bridge-utils
 sudo pacman -S openvpn
+
+```
+
+### openvpn
+```
+groupadd -r nogroup
 ```
 
 ## Wake On LAN

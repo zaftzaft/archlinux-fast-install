@@ -355,6 +355,17 @@ $ pacman -S rxvt-unicode
 yay -S urxvt-resize-font-git
 ```
 
+## input method
+```
+pacman -S fcitx-im fcitx-mozc fcitx-configtool
+```
+
+```
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+```
+
 
 ## uim
 pacman -S uim

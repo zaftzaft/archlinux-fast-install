@@ -588,6 +588,14 @@ pacman -S lshw
 yay -S nkf
 ```
 
+## Bluetooth
+```
+pacman -S bluez bluez-utils
+
+systemctl start bluetooth
+systemctl enable bluetooth
+```
+
 
 ## Awesome network tool
 ```

@@ -570,6 +570,8 @@ sudo pacman -S wol
 sudo pacman -S bridge-utils
 sudo pacman -S openvpn
 
+sudo npm i -g wscat
+
 ```
 
 ### openvpn

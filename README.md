@@ -579,6 +579,11 @@ sudo npm i -g wscat
 groupadd -r nogroup
 ```
 
+## Wireguard
+```
+pacman -S linux-headers wireguard-dkms wireguard-tools
+```
+
 ## Wake On LAN
 ```
 yay -S wol-systemd

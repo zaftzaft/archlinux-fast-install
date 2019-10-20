@@ -60,7 +60,8 @@ $ vim /etc/pacman.d/mirrorlist
 ## パッケージのインストール
 ```
 $ pacstrap /mnt base linux base-devel
-$ pacstrap /mnt vim openssh
+$ pacstrap /mnt vi vim openssh
+$ pacstrap /mnt openresolv
 ```
 
 ## fstab の設定
@@ -254,7 +255,9 @@ $ hwclock -w --localtime
 wget https://github.com/Jguer/yay/releases/download/v9.0.1/yay_9.0.1_x86_64.tar.gz
 tar xf
 cp yay /usr/bin
+yay -S yay
 
+## pkg cache
 find .cache/yay/ | grep pkg
 
 

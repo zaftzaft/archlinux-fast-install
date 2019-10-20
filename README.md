@@ -59,7 +59,7 @@ $ vim /etc/pacman.d/mirrorlist
 
 ## パッケージのインストール
 ```
-$ pacstrap /mnt base base-devel
+$ pacstrap /mnt base linux base-devel
 $ pacstrap /mnt vim openssh
 ```
 

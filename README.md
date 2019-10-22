@@ -856,3 +856,21 @@ systemctl enable smb
 ```
 log file = /var/log/samba/%m.log
 ```
+
+
+
+
+
+# arch ARM
+
+vim /boot/config.txt
+```
+fsck.mode=force
+dtparam=i2c_arm=on
+```
+
+vim /etc/modules-load.d/raspberrypi.conf
+```
+i2c-dev
+i2c-bcm2708
+```

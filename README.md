@@ -560,6 +560,11 @@ sudo pacman -S dosfstools ntfs-3g samba exfat-utils rsync
 sudo pacman -S squashfs-tools
 ```
 
+## io
+```
+sudo pacman -S iotop sysstat strace
+```
+
 ## network
 ```
 sudo pacman -S tcpdump hping nmap

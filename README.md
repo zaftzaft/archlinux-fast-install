@@ -592,6 +592,12 @@ groupadd -r nogroup
 pacman -S linux-headers wireguard-dkms wireguard-tools
 ```
 
+```
+# for Android app
+pacman -S qrencode
+qrencode -t ansiutf8 < wg.conf
+```
+
 ## Wake On LAN
 ```
 yay -S wol-systemd

@@ -202,7 +202,7 @@ $ ping google.com
 
 ## Wi-Fi
 ```
-$ sudo pacman -S wpa_supplicant iw
+$ sudo pacman -S wpa_supplicant iw dhcpcd linux-firmware
 ```
 
 

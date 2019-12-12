@@ -559,6 +559,7 @@ port: 80
 sudo pacman -S dosfstools ntfs-3g samba exfat-utils rsync
 sudo pacman -S nfs-utils
 sudo pacman -S squashfs-tools
+sudo pacman -S smartmontools
 ```
 
 ## io

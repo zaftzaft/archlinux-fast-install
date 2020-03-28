@@ -579,6 +579,7 @@ sudo pacman -S mtr nethogs iptraf-ng bwm-ng
 sudo pacman -S wol
 sudo pacman -S bridge-utils
 sudo pacman -S openvpn
+sudo pacman -S usb_modeswitch
 
 sudo npm i -g wscat
 

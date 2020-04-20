@@ -55,3 +55,16 @@ WantedBy=default.target
 
 systemctl start hdmi-power-off
 systemctl enable hdmi-power-off
+
+
+# Bluetooth
+yay hciattach-rpi3
+yay pi-bluetooth
+
+mkdir /etc/firmware
+
+systemctl start brcm43438
+systemctl enable brcm43438
+
+systemctl start bluetooth
+systemctl enable bluetooth

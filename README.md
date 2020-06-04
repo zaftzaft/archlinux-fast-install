@@ -301,6 +301,12 @@ ExecStart=
 ExecStart=/usr/bin/systemd-nspawn --quiet --keep-unit --boot --link-journal=try-guest --machine=%i
 ```
 
+
+private network
+```
+rm /usr/lib/systemd/network/80-container-host0.network
+```
+
 ### pacstrap
 ```
 pacstrap -icd <dir> base base-devel --ignore linux

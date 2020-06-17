@@ -21,6 +21,8 @@ NTP=ntp.nict.jp
 
 
 # i2c
+pacman -S i2c-tools
+
 - /boot/config.txt
 ```
 dtparam=i2c_arm=on
@@ -33,7 +35,12 @@ i2c-dev
 i2c-bcm2708
 ```
 
-pacman -S i2c-tools
+### rasp zero
+```
+i2c-dev
+i2c-bcm2835
+```
+
 
 
 

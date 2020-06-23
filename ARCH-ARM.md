@@ -75,3 +75,24 @@ systemctl enable brcm43438
 
 systemctl start bluetooth
 systemctl enable bluetooth
+
+
+
+# Firmware Pi4
+https://github.com/raspberrypi/rpi-eeprom
+
+## version
+```
+/opt/vc/bin/vcgencmd bootloader_version 
+```
+
+
+## update
+```
+pacman -Sy base-devel python
+PATH=$PATH:/opt/vc/bin
+FIRMWARE_RELEASE_STATUS=stable sh rpi-eeprom-update
+```
+
+
+
